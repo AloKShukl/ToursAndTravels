@@ -1,0 +1,114 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>RegistrationFilter</filter-name>
+  	<display-name>RegistrationFilter</display-name>
+  	<description></description>
+  	<filter-class>com.files.controller.RegistrationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>RegistrationFilter</filter-name>
+  	<url-pattern>/OTPverify.jsp</url-pattern>
+  </filter-mapping>
+  <servlet>
+  	<servlet-name>ULoginServlet</servlet-name>
+  	<display-name>ULoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.files.controller.ULoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>PasswordForgetServlet</servlet-name>
+  	<display-name>PasswordForgetServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.files.controller.PasswordForgetServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<display-name>RegisterServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.files.controller.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BookServlet</servlet-name>
+  	<display-name>BookServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.files.controller.BookServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>MailServlet</servlet-name>
+  	<display-name>MailServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.files.controller.MailServlet</servlet-class>
+  </servlet>
+   <servlet>
+  	<servlet-name>SendMailServlet</servlet-name>
+  	<display-name>SendMailServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.files.controller.SendMailServlet</servlet-class>
+  </servlet>
+   <servlet>
+   	<servlet-name>ProfileUpdateServlet</servlet-name>
+   	<display-name>ProfileUpdateServlet</display-name>
+   	<description></description>
+   	<servlet-class>com.files.controller.ProfileUpdateServlet</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>UpdateUserbyAdminServlet</servlet-name>
+   	<display-name>UpdateUserbyAdminServlet</display-name>
+   	<description></description>
+   	<servlet-class>com.files.controller.UpdateUserbyAdminServlet</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>SearchUserServlet</servlet-name>
+   	<display-name>SearchUserServlet</display-name>
+   	<description></description>
+   	<servlet-class>com.files.controller.SearchUserServlet</servlet-class>
+   </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ULoginServlet</servlet-name>
+  	<url-pattern>/ULoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PasswordForgetServlet</servlet-name>
+  	<url-pattern>/PasswordForgetServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BookServlet</servlet-name>
+  	<url-pattern>/BookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MailServlet</servlet-name>
+  	<url-pattern>/MailServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+  	<servlet-name>SendMailServlet</servlet-name>
+  	<url-pattern>/SendMailServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>ProfileUpdateServlet</servlet-name>
+   	<url-pattern>/ProfileUpdateServlet</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>UpdateUserbyAdminServlet</servlet-name>
+   	<url-pattern>/UpdateUserbyAdminServlet</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>SearchUserServlet</servlet-name>
+   	<url-pattern>/SearchUserServlet</url-pattern>
+   </servlet-mapping>
+  
+    <welcome-file-list>
+  	<welcome-file>Index.jsp</welcome-file>
+ 	</welcome-file-list>
+</web-app>
+
+
